@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const bodyparser=require('body-parser');
 const loginpage=require('./routes/login');
- 
+app.use('/images',express.static(__dirname+'/images'));
 
 
 
